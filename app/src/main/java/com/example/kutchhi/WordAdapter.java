@@ -14,10 +14,8 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
-    private int mColorResourceId;
-    public WordAdapter(Context context, ArrayList<Word> words, int colorResourceId){
+    public WordAdapter(Context context, ArrayList<Word> words){
         super(context,0,words);
-        mColorResourceId = colorResourceId;
     }
 
     @Override
@@ -43,8 +41,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
             imageView.setVisibility(View.GONE);
         }
         View textContainer = listItemView.findViewById(R.id.text_container);
-        int color = ContextCompat.getColor(getContext(),mColorResourceId);
-        textContainer.setBackgroundColor(color);
         return listItemView;
 
     }
