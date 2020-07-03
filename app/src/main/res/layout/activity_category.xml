@@ -78,6 +78,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_numbers"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginStart="30dp"
@@ -106,6 +107,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_phrases"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginStart="30dp"
@@ -126,6 +128,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_family"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginStart="30dp"
