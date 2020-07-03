@@ -2,6 +2,8 @@ package com.example.kutchhi;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -27,10 +29,29 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
     }
     @Override
     public void onClick(View v) {
-        Intent mainActivity = new Intent(getApplicationContext(),  HolderActivity.class);
-        startActivity(mainActivity);
-
+        Intent intent;
+        switch (v.getId()) {
+            case R.id.card_view_numbers:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "1");
+                startActivity(intent);
+                break;
+            case R.id.card_view_colors:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "2");
+                startActivity(intent);
+                break;
+            case R.id.card_view_family:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "3");
+                startActivity(intent);
+                break;
+            case R.id.card_view_phrases:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "4");
+                startActivity(intent);
+            default:
+                break;
+        }
     }
-
-
 }
