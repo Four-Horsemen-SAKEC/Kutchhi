@@ -9,6 +9,7 @@ public class HolderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_holder);
         String FragmentId = getIntent().getStringExtra("FragmentId");
         switch(FragmentId){
@@ -32,6 +33,27 @@ public class HolderActivity extends AppCompatActivity {
                         .replace(R.id.container, new FragmentPhrases())
                         .commit();
                 break;
+            case "5":
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new FragmentGreeting())
+                        .commit();
+                break;
+            case "6":
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new FragmentFood())
+                        .commit();
+                break;
+            case "7":
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new FragmentMeasurements())
+                        .commit();
+                break;
+            case "8":
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new FragmentGrammar())
+                        .commit();
+                break;
+
             default:
                 Log.e("App Crashed","Maa chudao");
 

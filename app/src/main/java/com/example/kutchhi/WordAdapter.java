@@ -29,8 +29,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
         Word word = getItem(position);
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        miwokTextView.setText(word.getMiwokTranslation());
+        TextView kutchhiTextView = (TextView) listItemView.findViewById(R.id.kutchhi_text_view);
+        kutchhiTextView.setText(word.getKutchhiTranslation());
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultTextView.setText(word.getDefaultTranslation());
         if(word.hasImage()){

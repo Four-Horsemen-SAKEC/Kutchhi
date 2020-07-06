@@ -21,10 +21,18 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         CardView numbersCard = (CardView) findViewById(R.id.card_view_numbers);
         CardView phrasesCard = (CardView) findViewById(R.id.card_view_phrases);
         CardView familyCard = (CardView) findViewById(R.id.card_view_family);
+        CardView greetingCard = (CardView) findViewById(R.id.card_view_greeting);
+        CardView foodCard = (CardView) findViewById(R.id.card_view_food);
+        CardView measurementCard = (CardView) findViewById(R.id.card_view_measurements);
+        CardView grammarCard = (CardView) findViewById(R.id.card_view_grammar);
         colorsCard.setOnClickListener(this);
         numbersCard.setOnClickListener(this);
         familyCard.setOnClickListener(this);
         phrasesCard.setOnClickListener(this);
+        greetingCard.setOnClickListener(this);
+        foodCard.setOnClickListener(this);
+        measurementCard.setOnClickListener(this);
+        grammarCard.setOnClickListener(this);
 
     }
     @Override
@@ -50,8 +58,31 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 intent = new Intent(getApplicationContext(), HolderActivity.class);
                 intent.putExtra("FragmentId", "4");
                 startActivity(intent);
+                break;
+            case R.id.card_view_greeting:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "5");
+                startActivity(intent);
+                break;
+            case R.id.card_view_food:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "6");
+                startActivity(intent);
+                break;
+            case R.id.card_view_measurements:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "7");
+                startActivity(intent);
+                break;
+            case R.id.card_view_grammar:
+                intent = new Intent(getApplicationContext(), HolderActivity.class);
+                intent.putExtra("FragmentId", "8");
+                startActivity(intent);
+                break;
             default:
                 break;
         }
     }
+
+
 }

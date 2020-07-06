@@ -6,7 +6,8 @@
     android:layout_height="88dp"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
-    android:paddingTop="8dp">
+    android:paddingTop="8dp"
+    android:background="#000000">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
             android:layout_height="88dp"
             android:layout_gravity="center_vertical"
             android:gravity="center"
-            android:background="#191414"
+            android:background="#555555"
             android:minHeight="88dp">
 
             <ImageView
@@ -41,7 +42,7 @@
                 android:paddingLeft="16dp">
 
                 <TextView
-                    android:id="@+id/miwok_text_view"
+                    android:id="@+id/kutchhi_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:layout_weight="1"
@@ -55,7 +56,7 @@
                     android:id="@+id/default_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_below="@id/miwok_text_view"
+                    android:layout_below="@id/kutchhi_text_view"
                     android:layout_weight="1"
                     android:gravity="top"
                     android:textAppearance="?android:textAppearanceMedium"
@@ -67,8 +68,8 @@
                     android:layout_height="24dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="16dp" />
-                <!-- android:src="@drawable/ic_baseline_arrow_right_24"-->
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/play_arrow_24"/>
             </RelativeLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

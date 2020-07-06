@@ -1,6 +1,5 @@
 package com.example.kutchhi;
 
-import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -15,13 +14,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+Taken From Numbers
+ */
+public class FragmentFood extends Fragment {
 
-public class FragmentNumbers extends Fragment {
-
-
-    public FragmentNumbers() {
-        // Required empty public constructor
-    }
     private MediaPlayer mediaPlayer;
 
     private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {

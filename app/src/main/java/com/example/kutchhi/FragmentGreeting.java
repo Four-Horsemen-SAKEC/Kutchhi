@@ -1,6 +1,5 @@
 package com.example.kutchhi;
 
-import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -15,13 +14,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+Taken From Phrases
+ */
+public class FragmentGreeting extends Fragment {
 
-public class FragmentNumbers extends Fragment {
-
-
-    public FragmentNumbers() {
-        // Required empty public constructor
-    }
     private MediaPlayer mediaPlayer;
 
     private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
@@ -60,9 +57,6 @@ public class FragmentNumbers extends Fragment {
         releaseMediaPlayer();
     }
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -70,19 +64,20 @@ public class FragmentNumbers extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("two", "otiiko", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("three", "tolookosu", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("four", "oyyisa", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("five", "massokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("six", "temmokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("seven", "kenekaku", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("eight", "kawinta", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("nine", "wo’e", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("ten", "na’aacha", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
+        words.add(new Word("Where are you going?", "minto wuksus",R.raw.placeholder_audio));
+        words.add(new Word("What is your name?", "tinnә oyaase'nә",R.raw.placeholder_audio));
+        words.add(new Word("My name is...", "oyaaset...",R.raw.placeholder_audio));
+        words.add(new Word("How are you feeling?", "michәksәs?",R.raw.placeholder_audio));
+        words.add(new Word("I’m feeling good.", "kuchi achit",R.raw.placeholder_audio));
+        words.add(new Word("Are you coming?", "әәnәs'aa?",R.raw.placeholder_audio));
+        words.add(new Word("Yes, I’m coming.", "hәә’ әәnәm",R.raw.placeholder_audio));
+        words.add(new Word("I’m coming.", "әәnәm",R.raw.placeholder_audio));
+        words.add(new Word("Let’s go.", "yoowutis",R.raw.placeholder_audio));
+        words.add(new Word("Come here.", "әnni'nem",R.raw.placeholder_audio));
+        WordAdapter adapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
