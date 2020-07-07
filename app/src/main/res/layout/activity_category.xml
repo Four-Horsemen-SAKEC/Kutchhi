@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@drawable/main_back"
     >
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/category_background"
     android:orientation="vertical"
     tools:context=".CategoryActivity">
 
@@ -73,7 +73,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/colors_card">
+                android:background="@drawable/color_back">
 
             </FrameLayout>
         </androidx.cardview.widget.CardView>
@@ -173,7 +173,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/phrases_card">
+                android:background="@drawable/greeting_back">
 
             </FrameLayout>
         </androidx.cardview.widget.CardView>
