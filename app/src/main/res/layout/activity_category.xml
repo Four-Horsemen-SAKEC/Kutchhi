@@ -44,7 +44,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/numbers_card">
+                android:background="@drawable/numbers_back">
 
             </FrameLayout>
         </androidx.cardview.widget.CardView>
@@ -229,6 +229,7 @@
         android:layout_marginRight="22dp"
         android:background="#324755"
         android:textColor="#fff"
-        android:text="Learn More About Kutch" />
+        android:text="Learn More About Kutch"
+        />
 </LinearLayout>
 </ScrollView>

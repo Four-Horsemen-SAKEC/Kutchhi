@@ -9,9 +9,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener {
-
+    private Button learn_more;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,16 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         foodCard.setOnClickListener(this);
         measurementCard.setOnClickListener(this);
         grammarCard.setOnClickListener(this);
+        learn_more =findViewById(R.id.learn_more_button);
+        learn_more.setOnClickListener(new View.OnClickListener()  {
+            @Override
+            public void onClick(View v) {
+
+                Intent mainActivity = new Intent(getApplicationContext(), LearnMoreActivity.class);
+                startActivity(mainActivity);
+                finish();
+            }
+        });
 
     }
     @Override
@@ -83,6 +94,4 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
-
-
 }
