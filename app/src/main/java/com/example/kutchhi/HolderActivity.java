@@ -58,7 +58,5 @@ public class HolderActivity extends AppCompatActivity {
                 Log.e("App Crashed","Maa chudao");
 
         }
-
-
     }
 }

@@ -21,7 +21,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         CardView numbersCard = (CardView) findViewById(R.id.card_view_numbers);
         CardView phrasesCard = (CardView) findViewById(R.id.card_view_phrases);
         CardView familyCard = (CardView) findViewById(R.id.card_view_family);
-        CardView greetingCard = (CardView) findViewById(R.id.card_view_greeting);
+        CardView greetingCard = (CardView) findViewById(R.id.card_view_greetings);
         CardView foodCard = (CardView) findViewById(R.id.card_view_food);
         CardView measurementCard = (CardView) findViewById(R.id.card_view_measurements);
         CardView grammarCard = (CardView) findViewById(R.id.card_view_grammar);
@@ -59,7 +59,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 intent.putExtra("FragmentId", "4");
                 startActivity(intent);
                 break;
-            case R.id.card_view_greeting:
+            case R.id.card_view_greetings:
                 intent = new Intent(getApplicationContext(), HolderActivity.class);
                 intent.putExtra("FragmentId", "5");
                 startActivity(intent);
