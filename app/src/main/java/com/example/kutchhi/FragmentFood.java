@@ -3,14 +3,13 @@ package com.example.kutchhi;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -58,8 +57,6 @@ public class FragmentFood extends Fragment {
     }
 
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,16 +64,26 @@ public class FragmentFood extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("two", "otiiko", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("three", "tolookosu", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("four", "oyyisa", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("five", "massokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("six", "temmokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("seven", "kenekaku", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("eight", "kawinta", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("nine", "wo’e", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("ten", "na’aacha", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Dabeli", "Ḍābēlī","दाबेली", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Jalebi", "Jalēbī","जलेबी", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Thepla", "Thēpalā","थेपला", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Khakhra", "Khākharā","खाखरा", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Khichdi", "Khīcaḍī","खिचड़ी", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Kadhi", "Kaḍhī","कढ़ी", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Undhiyo", "Undhīyu","ऊंधियो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Rotlo", "Rōṭalō","रोटलो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Kharibhat", "Khārībhātha","खारीभाथ", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Pakwan", "Pakavāna","पकवान", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Sata", "Sātā","साटा", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Khandvi", "Khaṇḍavī","खांडवी", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Patra", "Pātrā","पात्रा", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Khaman", "Khamaṇa","खमण", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Muthia", "Muthiyā","मुठिया", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Osaman", "Ōsōmana","ओसामण", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Lachko", "Lacakō","लच्चको", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Chhai (aka Kutchi Beer)", "Chāya","छाय", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Monhan thal", "Mōhanathāḷa","मोहनथाल", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("Lilva Kachori", "Līlavā kacōrī","लिलवा कचोरी", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
         WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(itemsAdapter);

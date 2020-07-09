@@ -1,17 +1,15 @@
 package com.example.kutchhi;
 
-import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -70,16 +68,26 @@ public class FragmentNumbers extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one", "lutti", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("two", "otiiko", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("three", "tolookosu", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("four", "oyyisa", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("five", "massokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("six", "temmokka", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("seven", "kenekaku", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("eight", "kawinta", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("nine", "wo’e", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
-        words.add(new Word("ten", "na’aacha", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("one", "one","एकडो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("two", "one","ब", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("three", "one","त्रै", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("four", "one","चार", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("five", "one","पंज", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("six", "one","छः", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("seven", "one","सत", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("eight", "one","अठ", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("nine", "one","नॅा", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("ten", "one","डों", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("eleven", "one","अग्यारो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("twelve", "one","बारो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("thirteen", "one","तेरौ", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("fourteen", "one","चौडों", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("fifteen", "one","पंद्रो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("sixteen", "one","सोळो", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("seventeen", "one","सत्रौ", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("eighteen", "one","अठरौ", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("nineteen", "one","औगनीस", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
+        words.add(new Word("twenty", "one","वीस", R.drawable.ic_launcher_foreground,R.raw.placeholder_audio));
         WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(itemsAdapter);

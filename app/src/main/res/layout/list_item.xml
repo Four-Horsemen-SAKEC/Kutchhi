@@ -3,37 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="88dp"
+    android:layout_height="100dp"
+    android:background="#6E8CA0"
     android:paddingLeft="8dp"
-    android:paddingRight="8dp"
     android:paddingTop="8dp"
-    android:background="#000000">
+    android:paddingRight="8dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
         android:fadingEdgeLength="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="6dp"
         app:cardElevation="5dp"
         app:cardPreventCornerOverlap="false">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="88dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
+            android:background="#F0F3F4"
             android:gravity="center"
-            android:background="#555555"
-            android:minHeight="88dp">
+            android:minHeight="100dp">
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="88dp"
-                android:layout_height="88dp" />
+                android:layout_height="88dp"
+                android:layout_centerVertical="true" />
 
             <RelativeLayout
                 android:id="@+id/text_container"
                 android:layout_width="match_parent"
-                android:layout_height="88dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
@@ -41,35 +46,45 @@
                 android:orientation="vertical"
                 android:paddingLeft="16dp">
 
-                <TextView
-                    android:id="@+id/kutchhi_text_view"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_weight="1"
-                    android:gravity="bottom"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    tools:text="lutti"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
 
-                <TextView
-                    android:id="@+id/default_text_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_below="@id/kutchhi_text_view"
-                    android:layout_weight="1"
-                    android:gravity="top"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/white"
-                    tools:text="one" />
+                    <TextView
+                        android:id="@+id/kutchhi_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#1B1C20"
+                        android:textStyle="bold"
+                        tools:text="lutti" />
+
+                    <TextView
+                        android:id="@+id/kutch_eng_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#324755"
+                        tools:text="one" />
+
+                    <TextView
+                        android:id="@+id/default_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#324755"
+                        tools:text="one" />
+                </LinearLayout>
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/play_arrow_24"/>
+                    android:src="@drawable/play_arrow_24" />
             </RelativeLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

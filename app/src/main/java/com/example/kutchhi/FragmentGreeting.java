@@ -3,14 +3,13 @@ package com.example.kutchhi;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -64,16 +63,16 @@ public class FragmentGreeting extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "minto wuksus",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "tinnә oyaase'nә",R.raw.placeholder_audio));
-        words.add(new Word("My name is...", "oyaaset...",R.raw.placeholder_audio));
-        words.add(new Word("How are you feeling?", "michәksәs?",R.raw.placeholder_audio));
-        words.add(new Word("I’m feeling good.", "kuchi achit",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "әәnәs'aa?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "hәә’ әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "yoowutis",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "әnni'nem",R.raw.placeholder_audio));
+        words.add(new Word("Where are you going?", "one","minto wuksus",R.raw.placeholder_audio));
+        words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
+        words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
+        words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));
+        words.add(new Word("I’m feeling good.", "one","kuchi achit",R.raw.placeholder_audio));
+        words.add(new Word("Are you coming?", "one","әәnәs'aa?",R.raw.placeholder_audio));
+        words.add(new Word("Yes, I’m coming.", "one","hәә’ әәnәm",R.raw.placeholder_audio));
+        words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
+        words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
+        words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
         WordAdapter adapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(adapter);

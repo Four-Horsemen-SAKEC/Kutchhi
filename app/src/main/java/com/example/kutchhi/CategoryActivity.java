@@ -1,23 +1,28 @@
 package com.example.kutchhi;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener {
     private Button learn_more;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_category);
+        getSupportActionBar().setElevation(0);
+        String title = "Kutchhi";
+        SpannableString s = new SpannableString(title);
+        s.setSpan(new ForegroundColorSpan(Color.parseColor("#324755")), 0, title.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        getSupportActionBar().setTitle(s);
         CardView colorsCard = (CardView) findViewById(R.id.card_view_colors); // creating a CardView and assigning a value.
         CardView numbersCard = (CardView) findViewById(R.id.card_view_numbers);
         CardView phrasesCard = (CardView) findViewById(R.id.card_view_phrases);
@@ -41,7 +46,6 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
                 Intent mainActivity = new Intent(getApplicationContext(), LearnMoreActivity.class);
                 startActivity(mainActivity);
-                finish();
             }
         });
 

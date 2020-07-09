@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 
@@ -33,6 +33,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
         kutchhiTextView.setText(word.getKutchhiTranslation());
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultTextView.setText(word.getDefaultTranslation());
+        TextView kutchEngTextView = (TextView) listItemView.findViewById(R.id.kutch_eng_text_view);
+        kutchEngTextView.setText(word.getKutchEngTranslation());
         if(word.hasImage()){
             imageView.setImageResource(word.getmResourceID());
             imageView.setVisibility(View.VISIBLE);
