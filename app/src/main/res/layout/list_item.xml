@@ -3,27 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="#6E8CA0"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
     android:paddingLeft="8dp"
     android:paddingTop="8dp"
     android:paddingRight="8dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="3dp"
         android:layout_marginRight="5dp"
         android:fadingEdgeLength="10dp"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="5dp"
-        app:cardPreventCornerOverlap="false">
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
             android:layout_gravity="center_vertical"
             android:background="#F0F3F4"
             android:gravity="center"
