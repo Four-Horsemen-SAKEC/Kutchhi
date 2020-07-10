@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LearnMoreActivity"></activity>
+        <activity android:name=".LearnMoreActivity" />
         <!--
         x
                Set to true if your app is Standalone, that is, it does not require the handheld
@@ -17,7 +17,15 @@
         -->
         <activity
             android:name=".HolderActivity"
-            android:label="@string/title_activity_holder"></activity>
+            android:label="@string/title_activity_holder" />
+        <activity android:name=".SplashScreen"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".CategoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

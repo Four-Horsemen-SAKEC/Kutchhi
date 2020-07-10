@@ -17,6 +17,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_category);
         getSupportActionBar().setElevation(0);
         String title = "Kutchhi";
