@@ -4,7 +4,7 @@
     <item android:drawable="@android:color/transparent"/>
 
     <item>
-        <bitmap android:src="@drawable/kutch_coa"
+        <bitmap android:src="@drawable/kutchhi_text"
             android:gravity="center"/>
     </item>
 
