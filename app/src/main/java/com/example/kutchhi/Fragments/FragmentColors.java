@@ -1,4 +1,4 @@
-package com.example.kutchhi;
+package com.example.kutchhi.Fragments;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,12 +11,17 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.kutchhi.R;
+import com.example.kutchhi.Word;
+import com.example.kutchhi.WordAdapter;
+
 import java.util.ArrayList;
 
-/**
- * taken from phrases
- */
-public class FragmentGrammar extends Fragment {
+public class FragmentColors extends Fragment {
+
+    public FragmentColors() {
+        // Required empty public constructor
+    }
 
     private MediaPlayer mediaPlayer;
 
@@ -57,35 +62,27 @@ public class FragmentGrammar extends Fragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
-
-
+        // Inflate the layout for this fragment
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "one","minto wuksus",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
-        words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
-        words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));
-        words.add(new Word("I’m feeling good.", "one","kuchi achit",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "one","әәnәs'aa?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "one","hәә’ әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
-
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
-        // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(getActivity(), words);
-
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file.
+        words.add(new Word("red", "one","weṭeṭṭi", R.drawable.color_red,R.raw.placeholder_audio));
+        words.add(new Word("green", "one","chokokki", R.drawable.color_green,R.raw.placeholder_audio));
+        words.add(new Word("brown", "one","ṭakaakki", R.drawable.color_brown,R.raw.placeholder_audio));
+        words.add(new Word("gray", "one","ṭopoppi", R.drawable.color_gray,R.raw.placeholder_audio));
+        words.add(new Word("black", "one","kululli", R.drawable.color_black,R.raw.placeholder_audio));
+        words.add(new Word("white", "one","kelelli", R.drawable.color_white,R.raw.placeholder_audio));
+        words.add(new Word("mustard yellow", "one","chiwiiṭә", R.drawable.color_mustard_yellow,R.raw.placeholder_audio));
+        words.add(new Word("dusty yellow", "one","ṭopiisә", R.drawable.color_dusty_yellow,R.raw.placeholder_audio));
+        WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
-
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
-        listView.setAdapter(adapter);
+        listView.setAdapter(itemsAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -97,7 +94,6 @@ public class FragmentGrammar extends Fragment {
             }
         });
 
-        // Inflate the layout for this fragment
         return rootView;
     }
 }

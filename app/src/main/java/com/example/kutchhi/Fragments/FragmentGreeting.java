@@ -1,4 +1,4 @@
-package com.example.kutchhi;
+package com.example.kutchhi.Fragments;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,14 +11,16 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.kutchhi.R;
+import com.example.kutchhi.Word;
+import com.example.kutchhi.WordAdapter;
+
 import java.util.ArrayList;
 
-
-public class FragmentPhrases extends Fragment {
-
-    public FragmentPhrases() {
-        // Required empty public constructor
-    }
+/**
+Taken From Phrases
+ */
+public class FragmentGreeting extends Fragment {
 
     private MediaPlayer mediaPlayer;
 
@@ -75,18 +77,8 @@ public class FragmentPhrases extends Fragment {
         words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
         words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
         words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
-
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
-        // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words);
-
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
-
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -98,8 +90,6 @@ public class FragmentPhrases extends Fragment {
                 mediaPlayer.setOnCompletionListener(mCompletionListener);
             }
         });
-
-        // Inflate the layout for this fragment
         return rootView;
     }
 }

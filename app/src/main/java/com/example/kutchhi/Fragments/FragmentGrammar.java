@@ -1,4 +1,4 @@
-package com.example.kutchhi;
+package com.example.kutchhi.Fragments;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,12 +11,16 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.kutchhi.R;
+import com.example.kutchhi.Word;
+import com.example.kutchhi.WordAdapter;
+
 import java.util.ArrayList;
 
 /**
- * Taken from Phrases
+ * taken from phrases
  */
-public class FragmentMeasurements extends Fragment {
+public class FragmentGrammar extends Fragment {
 
     private MediaPlayer mediaPlayer;
 

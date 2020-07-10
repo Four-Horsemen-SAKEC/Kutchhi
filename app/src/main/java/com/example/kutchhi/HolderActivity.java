@@ -6,9 +6,17 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.kutchhi.Fragments.FragmentColors;
+import com.example.kutchhi.Fragments.FragmentFamily;
+import com.example.kutchhi.Fragments.FragmentFood;
+import com.example.kutchhi.Fragments.FragmentGrammar;
+import com.example.kutchhi.Fragments.FragmentGreeting;
+import com.example.kutchhi.Fragments.FragmentMeasurements;
+import com.example.kutchhi.Fragments.FragmentNumbers;
+import com.example.kutchhi.Fragments.FragmentPhrases;
 
 public class HolderActivity extends AppCompatActivity {
     @Override

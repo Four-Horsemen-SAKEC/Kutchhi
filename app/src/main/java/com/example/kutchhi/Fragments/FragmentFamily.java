@@ -1,4 +1,4 @@
-package com.example.kutchhi;
+package com.example.kutchhi.Fragments;
 
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,12 +11,17 @@ import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.kutchhi.R;
+import com.example.kutchhi.Word;
+import com.example.kutchhi.WordAdapter;
+
 import java.util.ArrayList;
 
-public class FragmentColors extends Fragment {
+public class FragmentFamily extends Fragment {
 
-    public FragmentColors() {
-        // Required empty public constructor
+
+    public FragmentFamily(){
+
     }
 
     private MediaPlayer mediaPlayer;
@@ -58,27 +63,37 @@ public class FragmentColors extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+
         // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.word_list, container, false);
+
+
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("red", "one","weṭeṭṭi", R.drawable.color_red,R.raw.placeholder_audio));
-        words.add(new Word("green", "one","chokokki", R.drawable.color_green,R.raw.placeholder_audio));
-        words.add(new Word("brown", "one","ṭakaakki", R.drawable.color_brown,R.raw.placeholder_audio));
-        words.add(new Word("gray", "one","ṭopoppi", R.drawable.color_gray,R.raw.placeholder_audio));
-        words.add(new Word("black", "one","kululli", R.drawable.color_black,R.raw.placeholder_audio));
-        words.add(new Word("white", "one","kelelli", R.drawable.color_white,R.raw.placeholder_audio));
-        words.add(new Word("mustard yellow", "one","chiwiiṭә", R.drawable.color_mustard_yellow,R.raw.placeholder_audio));
-        words.add(new Word("dusty yellow", "one","ṭopiisә", R.drawable.color_dusty_yellow,R.raw.placeholder_audio));
-        WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
+        words.add(new Word("father", "one","әpә", R.drawable.family_father,R.raw.placeholder_audio));
+        words.add(new Word("mother", "one","әṭa", R.drawable.family_mother,R.raw.placeholder_audio));
+        words.add(new Word("son", "one","angsi", R.drawable.family_son,R.raw.placeholder_audio));
+        words.add(new Word("daughter", "one","tune", R.drawable.family_daughter,R.raw.placeholder_audio));
+        words.add(new Word("older brother", "one","taachi", R.drawable.family_older_brother,R.raw.placeholder_audio));
+        words.add(new Word("younger brother", "one","chalitti", R.drawable.family_younger_brother,R.raw.placeholder_audio));
+        words.add(new Word("older sister", "one","teṭe", R.drawable.family_older_sister,R.raw.placeholder_audio));
+        words.add(new Word("younger sister", "one","kolliti", R.drawable.family_younger_sister,R.raw.placeholder_audio));
+        words.add(new Word("grandmother ", "one","ama", R.drawable.family_grandmother,R.raw.placeholder_audio));
+        words.add(new Word("grandfather", "one","paapa", R.drawable.family_grandfather,R.raw.placeholder_audio));
+
+        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // adapter knows how to create list items for each item in the list.
+        WordAdapter adapter = new WordAdapter(getActivity(), words);
+
+        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
+        // There should be a {@link ListView} with the view ID called list, which is declared in the
+        // word_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
-        listView.setAdapter(itemsAdapter);
+
+        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Word} in the list.
+        listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -90,6 +105,10 @@ public class FragmentColors extends Fragment {
             }
         });
 
+
+
+
+        // Inflate the layout for this fragment
         return rootView;
     }
 }
