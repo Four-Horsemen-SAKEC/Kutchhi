@@ -10,5 +10,4 @@
     android:divider="@null"
     android:dividerHeight="0dp"
     android:background="@drawable/background">
-
 </ListView>

@@ -71,16 +71,16 @@ public class FragmentFamily extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("father", "one","әpә", R.drawable.family_father,R.raw.placeholder_audio));
-        words.add(new Word("mother", "one","әṭa", R.drawable.family_mother,R.raw.placeholder_audio));
-        words.add(new Word("son", "one","angsi", R.drawable.family_son,R.raw.placeholder_audio));
-        words.add(new Word("daughter", "one","tune", R.drawable.family_daughter,R.raw.placeholder_audio));
-        words.add(new Word("older brother", "one","taachi", R.drawable.family_older_brother,R.raw.placeholder_audio));
-        words.add(new Word("younger brother", "one","chalitti", R.drawable.family_younger_brother,R.raw.placeholder_audio));
-        words.add(new Word("older sister", "one","teṭe", R.drawable.family_older_sister,R.raw.placeholder_audio));
-        words.add(new Word("younger sister", "one","kolliti", R.drawable.family_younger_sister,R.raw.placeholder_audio));
-        words.add(new Word("grandmother ", "one","ama", R.drawable.family_grandmother,R.raw.placeholder_audio));
-        words.add(new Word("grandfather", "one","paapa", R.drawable.family_grandfather,R.raw.placeholder_audio));
+        words.add(new Word("father", "Adhha/Baapu","बापू  ", R.drawable.family_father,R.raw.placeholder_audio));
+        words.add(new Word("mother", "Maa","माँ ", R.drawable.family_mother,R.raw.placeholder_audio));
+        words.add(new Word("son", "Pottar","पोत्तर ", R.drawable.family_son,R.raw.placeholder_audio));
+        words.add(new Word("daughter", "Dhee","धी ", R.drawable.family_daughter,R.raw.placeholder_audio));
+        words.add(new Word("older brother", "Vado bhaa","वडो भा ", R.drawable.family_older_brother,R.raw.placeholder_audio));
+        words.add(new Word("younger brother", "Nendho Bhaa","नंधो भा ", R.drawable.family_younger_brother,R.raw.placeholder_audio));
+        words.add(new Word("older sister", "Vadi Bhenn","वडी भेण ", R.drawable.family_older_sister,R.raw.placeholder_audio));
+        words.add(new Word("younger sister", "Nendhi Bhenn","नंढी  भेण ", R.drawable.family_younger_sister,R.raw.placeholder_audio));
+        words.add(new Word("grandmother ", "Daadi (paternal) / Naani (maternal)","दादी / नानी ", R.drawable.family_grandmother,R.raw.placeholder_audio));
+        words.add(new Word("grandfather", "Daada (paternal) / Naana (maternal)","दादा / नाना ", R.drawable.family_grandfather,R.raw.placeholder_audio));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
