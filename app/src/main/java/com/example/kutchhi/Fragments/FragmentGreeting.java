@@ -67,7 +67,7 @@ public class FragmentGreeting extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "one","minto wuksus",R.raw.placeholder_audio));
+        words.add(new Word("Kem Chho?", "one","minto wuksus",R.raw.placeholder_audio));
         words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
         words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
         words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));

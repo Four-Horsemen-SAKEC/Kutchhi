@@ -67,16 +67,15 @@ public class FragmentMeasurements extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "one","minto wuksus",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
-        words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
-        words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));
-        words.add(new Word("I’m feeling good.", "one","kuchi achit",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "one","әәnәs'aa?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "one","hәә’ әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
+        words.add(new Word("Time", "Samay","समय",R.raw.placeholder_audio));
+        words.add(new Word("Date", "Tareekh","तारीख",R.raw.placeholder_audio));
+        words.add(new Word("__:15", "Sava-","सवा-(Number)",R.raw.placeholder_audio));
+        words.add(new Word("__:30", "Sade-","साढे-(Number)",R.raw.placeholder_audio));
+        words.add(new Word("__:45", "Pauna-(Number+1)","पौणा (Number+1)",R.raw.placeholder_audio));
+        words.add(new Word("1:30", "Dedh","डैढ",R.raw.placeholder_audio));
+        words.add(new Word("2:30", "Adhee","अढि",R.raw.placeholder_audio));
+        words.add(new Word("Quarter (¼) (kg/ltr)", "Paa","पा",R.raw.placeholder_audio));
+        words.add(new Word("Half (½) (kg/ltr)", "Ad-dho","अड्धो",R.raw.placeholder_audio));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
