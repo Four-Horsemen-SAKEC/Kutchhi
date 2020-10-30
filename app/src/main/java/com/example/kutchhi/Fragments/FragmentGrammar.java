@@ -67,17 +67,15 @@ public class FragmentGrammar extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "one","minto wuksus",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
-        words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
-        words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));
-        words.add(new Word("I’m feeling good.", "one","kuchi achit",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "one","әәnәs'aa?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "one","hәә’ әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
-
+        words.add(new Word("I", "Au","आऊं",R.raw.placeholder_audio));
+        words.add(new Word("You (informal)", "Tu","तू",R.raw.placeholder_audio));
+        words.add(new Word("You (polite)", "Ain","आईं",R.raw.placeholder_audio));
+        words.add(new Word("He/she/this", "Hi","ही",R.raw.placeholder_audio));
+        words.add(new Word("He/She/that", "Hu","हूँ",R.raw.placeholder_audio));
+        words.add(new Word("We (informal)", "Paa","पां",R.raw.placeholder_audio));
+        words.add(new Word("We (polite)", "Asaan","असां",R.raw.placeholder_audio));
+        words.add(new Word("They", "Lokaa","लोकां ",R.raw.placeholder_audio));
+        words.add(new Word("Me", "Muke","मूके",R.raw.placeholder_audio));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words);

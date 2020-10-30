@@ -175,7 +175,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_view_greetings"
+                android:id="@+id/card_view_animals"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="30dp"
@@ -191,7 +191,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/greeting_back">
+                    android:background="@drawable/animals_bkg">
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
 

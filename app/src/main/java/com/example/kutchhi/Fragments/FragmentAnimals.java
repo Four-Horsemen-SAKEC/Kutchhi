@@ -20,7 +20,7 @@ import java.util.ArrayList;
 /**
 Taken From Phrases
  */
-public class FragmentGreeting extends Fragment {
+public class FragmentAnimals extends Fragment {
 
     private MediaPlayer mediaPlayer;
 
@@ -67,16 +67,18 @@ public class FragmentGreeting extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Kem Chho?", "one","minto wuksus",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "one","tinnә oyaase'nә",R.raw.placeholder_audio));
-        words.add(new Word("My name is...", "one","oyaaset...",R.raw.placeholder_audio));
-        words.add(new Word("How are you feeling?", "one","michәksәs?",R.raw.placeholder_audio));
-        words.add(new Word("I’m feeling good.", "one","kuchi achit",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "one","әәnәs'aa?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "one","hәә’ әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "one","әәnәm",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "one","yoowutis",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "one","әnni'nem",R.raw.placeholder_audio));
+        words.add(new Word("Monkey", "vāñdro","वांद्रो",R.raw.placeholder_audio));
+        words.add(new Word("Cat", "bilādee","बिलाड़ी",R.raw.placeholder_audio));
+        words.add(new Word("Dog", "kūtto","कोत्तो",R.raw.placeholder_audio));
+        words.add(new Word("Tiger", "vāgha","वाघ",R.raw.placeholder_audio));
+        words.add(new Word("Elephant", "hāthee","हाथि",R.raw.placeholder_audio));
+        words.add(new Word("Lion", "siñh","सिँह",R.raw.placeholder_audio));
+        words.add(new Word("Snake", "sāpa","सप",R.raw.placeholder_audio));
+        words.add(new Word("Camel", "Ūṇṭa","ऊंट",R.raw.placeholder_audio));
+        words.add(new Word("Horse", "ghōḍō","गोडो",R.raw.placeholder_audio));
+        words.add(new Word("Buffalo", "bhēnsa","भैंस",R.raw.placeholder_audio));
+        words.add(new Word("Donkey", "dhaggo","ढगो",R.raw.placeholder_audio));
+        words.add(new Word("Cow", "gāya","गाय",R.raw.placeholder_audio));
         WordAdapter adapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(adapter);
