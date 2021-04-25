@@ -69,9 +69,9 @@ public class FragmentMeasurements extends Fragment {
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Time", "Samay","समय",R.raw.mes1));
         words.add(new Word("Date", "Tareekh","तारीख",R.raw.mes2));
-        words.add(new Word("__:15", "Sava-","सवा-(Number)",R.raw.mes3));
-        words.add(new Word("__:30", "Sade-","साढे-(Number)",R.raw.mes4));
-        words.add(new Word("__:45", "Pauna-(Number+1)","पौणा (Number+1)",R.raw.mes5));
+        words.add(new Word("__:15", "Sava-","सवा",R.raw.mes3));
+        words.add(new Word("__:30", "Sade-","साढे",R.raw.mes4));
+        words.add(new Word("__:45", "Pauna","पौणा ",R.raw.mes5));
         words.add(new Word("1:30", "Dedh","डैढ",R.raw.mes6));
         words.add(new Word("2:30", "Adhee","अढि",R.raw.mes7));
         words.add(new Word("Quarter (¼) (kg/ltr)", "Paa","पा",R.raw.mes8));
