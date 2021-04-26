@@ -69,16 +69,16 @@ public class FragmentPhrases extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Where are you going?", "ein kadā vannotā?","आईं कडा वनोता",R.raw.placeholder_audio));
-        words.add(new Word("What is your name?", "aanjo nālo koro aaye?","आंजो नालो कोरो आय ?",R.raw.placeholder_audio));
-        words.add(new Word("My name is (Name)", "Mujho nālo (Name) aaye","मुजो  नालो (name ) आय। ",R.raw.placeholder_audio));
-        words.add(new Word("How are you?", "ein ki aayo?","आयीँ क़ि अयो ?",R.raw.placeholder_audio));
-        words.add(new Word("I’m good.", "aaun majja me aiyan","आऊं मज्जामें अऐयां ",R.raw.placeholder_audio));
-        words.add(new Word("Are you coming?", "ein aachotā?","आईं अच्चोंता?",R.raw.placeholder_audio));
-        words.add(new Word("Yes, I’m coming.", "Haan, Aaun accha to(male)/ti(female)","हाँ, आऊं अच्चा तो/ती",R.raw.placeholder_audio));
-        words.add(new Word("I’m coming.", "Aaun accha to(male)/ti(female)","आऊं अच्चा तो/ती",R.raw.placeholder_audio));
-        words.add(new Word("Let’s go.", "hallaw","हलो",R.raw.placeholder_audio));
-        words.add(new Word("Come here.", "heda acch","हेडा अच्च",R.raw.placeholder_audio));
+        words.add(new Word("Where are you going?", "ein kadā vannotā?","आईं कडा वनोता",R.raw.phra1));
+        words.add(new Word("What is your name?", "aanjo nālo koro aaye?","आंजो नालो कोरो आय ?",R.raw.phra2));
+        words.add(new Word("My name is (Name)", "Mujho nālo (Name) aaye","मुजो  नालो (name ) आय। ",R.raw.phra3));
+        words.add(new Word("How are you?", "ein ki aayo?","आयीँ क़ि अयो ?",R.raw.phra4));
+        words.add(new Word("I’m good.", "aaun majja me aiyan","आऊं मज्जामें अऐयां ",R.raw.phra5));
+        words.add(new Word("Are you coming?", "ein aachotā?","आईं अच्चोंता?",R.raw.phra6));
+        words.add(new Word("Yes, I’m coming.", "Haan, Aaun accha to(male)/ti(female)","हाँ, आऊं अच्चा तो/ती",R.raw.phra7));
+        words.add(new Word("I’m coming.", "Aaun accha to(male)/ti(female)","आऊं अच्चा तो/ती",R.raw.phra8));
+        words.add(new Word("Let’s go.", "hallaw","हलो",R.raw.phra9));
+        words.add(new Word("Come here.", "heda acch","हेडा अच्च",R.raw.phra10));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

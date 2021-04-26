@@ -67,15 +67,15 @@ public class FragmentGrammar extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("I", "Au","आऊं",R.raw.placeholder_audio));
-        words.add(new Word("You (informal)", "Tu","तू",R.raw.placeholder_audio));
-        words.add(new Word("You (polite)", "Ain","आईं",R.raw.placeholder_audio));
-        words.add(new Word("He/she/this", "Hi","ही",R.raw.placeholder_audio));
-        words.add(new Word("He/She/that", "Hu","हूँ",R.raw.placeholder_audio));
-        words.add(new Word("We (informal)", "Paa","पां",R.raw.placeholder_audio));
-        words.add(new Word("We (polite)", "Asaan","असां",R.raw.placeholder_audio));
-        words.add(new Word("They", "Lokaa","लोकां ",R.raw.placeholder_audio));
-        words.add(new Word("Me", "Muke","मूके",R.raw.placeholder_audio));
+        words.add(new Word("I", "Au","आऊं",R.raw.gram1));
+        words.add(new Word("You (informal)", "Tu","तू",R.raw.gram2));
+        words.add(new Word("You (polite)", "Ain","आईं",R.raw.gram3));
+        words.add(new Word("He/she/this", "Hi","ही",R.raw.gram4));
+        words.add(new Word("He/She/that", "Hu","हूँ",R.raw.gram5));
+        words.add(new Word("We (informal)", "Paa","पां",R.raw.gram6));
+        words.add(new Word("We (polite)", "Asaan","असां",R.raw.gram7));
+        words.add(new Word("They", "Lokaa","लोकां ",R.raw.gram8));
+        words.add(new Word("Me", "Muke","मूके",R.raw.gram9));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         WordAdapter adapter = new WordAdapter(getActivity(), words);

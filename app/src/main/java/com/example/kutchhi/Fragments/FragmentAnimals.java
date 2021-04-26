@@ -67,18 +67,18 @@ public class FragmentAnimals extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Monkey", "vāñdro","वांद्रो",R.raw.placeholder_audio));
-        words.add(new Word("Cat", "bilādee","बिलाड़ी",R.raw.placeholder_audio));
-        words.add(new Word("Dog", "kūtto","कोत्तो",R.raw.placeholder_audio));
-        words.add(new Word("Tiger", "vāgha","वाघ",R.raw.placeholder_audio));
-        words.add(new Word("Elephant", "hāthee","हाथि",R.raw.placeholder_audio));
-        words.add(new Word("Lion", "siñh","सिँह",R.raw.placeholder_audio));
-        words.add(new Word("Snake", "sāpa","सप",R.raw.placeholder_audio));
-        words.add(new Word("Camel", "Ūṇṭa","ऊंट",R.raw.placeholder_audio));
-        words.add(new Word("Horse", "ghōḍō","गोडो",R.raw.placeholder_audio));
-        words.add(new Word("Buffalo", "bhēnsa","भैंस",R.raw.placeholder_audio));
-        words.add(new Word("Donkey", "dhaggo","ढगो",R.raw.placeholder_audio));
-        words.add(new Word("Cow", "gāya","गाय",R.raw.placeholder_audio));
+        words.add(new Word("Monkey", "vāñdro","वांद्रो",R.raw.ani1));
+        words.add(new Word("Cat", "bilādee","बिलाड़ी",R.raw.ani2));
+        words.add(new Word("Dog", "kūtto","कोत्तो",R.raw.ani3));
+        words.add(new Word("Tiger", "vāgha","वाघ",R.raw.ani4));
+        words.add(new Word("Elephant", "hāthee","हाथि",R.raw.ani5));
+        words.add(new Word("Lion", "siñh","सिँह",R.raw.ani6));
+        words.add(new Word("Snake", "sāpa","सप",R.raw.ani7));
+        words.add(new Word("Camel", "Ūṇṭa","ऊंट",R.raw.ani8));
+        words.add(new Word("Horse", "ghōḍō","गोडो",R.raw.ani9));
+        words.add(new Word("Buffalo", "bhēnsa","भैंस",R.raw.ani10));
+        words.add(new Word("Donkey", "dhaggo","ढगो",R.raw.ani11));
+        words.add(new Word("Cow", "gāya","गाय",R.raw.ani12));
         WordAdapter adapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(adapter);

@@ -71,16 +71,16 @@ public class FragmentFamily extends Fragment {
 
 
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("father", "Adhha/Baapu","बापू  ", R.drawable.family_father,R.raw.placeholder_audio));
-        words.add(new Word("mother", "Maa","माँ ", R.drawable.family_mother,R.raw.placeholder_audio));
-        words.add(new Word("son", "Pottar","पोत्तर ", R.drawable.family_son,R.raw.placeholder_audio));
-        words.add(new Word("daughter", "Dhee","धी ", R.drawable.family_daughter,R.raw.placeholder_audio));
-        words.add(new Word("older brother", "Vado bhaa","वडो भा ", R.drawable.family_older_brother,R.raw.placeholder_audio));
-        words.add(new Word("younger brother", "Nendho Bhaa","नंधो भा ", R.drawable.family_younger_brother,R.raw.placeholder_audio));
-        words.add(new Word("older sister", "Vadi Bhenn","वडी भेण ", R.drawable.family_older_sister,R.raw.placeholder_audio));
-        words.add(new Word("younger sister", "Nendhi Bhenn","नंढी  भेण ", R.drawable.family_younger_sister,R.raw.placeholder_audio));
-        words.add(new Word("grandmother ", "Daadi (paternal) / Naani (maternal)","दादी / नानी ", R.drawable.family_grandmother,R.raw.placeholder_audio));
-        words.add(new Word("grandfather", "Daada (paternal) / Naana (maternal)","दादा / नाना ", R.drawable.family_grandfather,R.raw.placeholder_audio));
+        words.add(new Word("father", "Adhha/Baapu","बापू  ", R.drawable.family_father,R.raw.fam1));
+        words.add(new Word("mother", "Maa","माँ ", R.drawable.family_mother,R.raw.fam2));
+        words.add(new Word("son", "Pottar","पोत्तर ", R.drawable.family_son,R.raw.fam3));
+        words.add(new Word("daughter", "Dhee","धी ", R.drawable.family_daughter,R.raw.fam4));
+        words.add(new Word("older brother", "Vado bhaa","वडो भा ", R.drawable.family_older_brother,R.raw.fam5));
+        words.add(new Word("younger brother", "Nendho Bhaa","नंधो भा ", R.drawable.family_younger_brother,R.raw.fam6));
+        words.add(new Word("older sister", "Vadi Bhenn","वडी भेण ", R.drawable.family_older_sister,R.raw.fam7));
+        words.add(new Word("younger sister", "Nendhi Bhenn","नंढी  भेण ", R.drawable.family_younger_sister,R.raw.fam8));
+        words.add(new Word("grandmother ", "Daadi (paternal) / Naani (maternal)","दादी / नानी ", R.drawable.family_grandmother,R.raw.fam9));
+        words.add(new Word("grandfather", "Daada (paternal) / Naana (maternal)","दादा / नाना ", R.drawable.family_grandfather,R.raw.fam10));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

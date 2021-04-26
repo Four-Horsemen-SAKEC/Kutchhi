@@ -72,13 +72,13 @@ public class FragmentColors extends Fragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
         // Inflate the layout for this fragment
         final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("red", "Laal","लाल", R.drawable.color_red,R.raw.placeholder_audio));
-        words.add(new Word("green", "Haro","हरो", R.drawable.color_green,R.raw.placeholder_audio));
-        words.add(new Word("brown", "Bhuro","भूरो", R.drawable.color_brown,R.raw.placeholder_audio));
-        words.add(new Word("gray", "Bhūkharā","भूखारा", R.drawable.color_gray,R.raw.placeholder_audio));
-        words.add(new Word("black", "Kaado","काळो", R.drawable.color_black,R.raw.placeholder_audio));
-        words.add(new Word("white", "dhhoro","धोरो", R.drawable.color_white,R.raw.placeholder_audio));
-        words.add(new Word("yellow", "peedo","पीळो", R.drawable.color_mustard_yellow,R.raw.placeholder_audio));
+        words.add(new Word("red", "Laal","लाल", R.drawable.color_red,R.raw.colors1));
+        words.add(new Word("green", "Haro","हरो", R.drawable.color_green,R.raw.colors2));
+        words.add(new Word("brown", "Bhuro","भूरो", R.drawable.color_brown,R.raw.colors3));
+        words.add(new Word("gray", "Bhūkharā","भूखारा", R.drawable.color_gray,R.raw.colors4));
+        words.add(new Word("black", "Kaado","काळो", R.drawable.color_black,R.raw.colors5));
+        words.add(new Word("white", "dhhoro","धोरो", R.drawable.color_white,R.raw.colors6));
+        words.add(new Word("yellow", "peedo","पीळो", R.drawable.color_mustard_yellow,R.raw.colors7));
         WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
         ListView listView = (ListView) rootView.findViewById(R.id.wordlist);
         listView.setAdapter(itemsAdapter);
