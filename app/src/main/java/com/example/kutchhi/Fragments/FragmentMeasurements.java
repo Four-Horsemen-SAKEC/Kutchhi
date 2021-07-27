@@ -20,6 +20,10 @@ import java.util.ArrayList;
 /**
  * Taken from Phrases
  */
+
+/**
+Fragment for Measurement section of app
+*/
 public class FragmentMeasurements extends Fragment {
 
     private MediaPlayer mediaPlayer;
